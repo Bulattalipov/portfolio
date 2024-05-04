@@ -1,0 +1,51 @@
+@font-face {
+  font-weight: 400;
+  font-family: DMSans;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('DMSans'),
+    local('DMSans-Regular'),
+    local('DMSans-Regular'),
+    url('../fonts/DMSans-Regular.woff2') format('woff2'),
+    url('../fonts/DMSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: DMSans;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('DMSans'),
+    local('DMSans-Medium'),
+    local('DMSans-Medium'),
+    url('../fonts/DMSans-Medium.woff2') format('woff2'),
+    url('../fonts/DMSans-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Outfit;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Outfit'),
+    local('Outfit-Medium'),
+    local('Outfit-Medium'),
+    url('../fonts/Outfit-Medium.woff2') format('woff2'),
+    url('../fonts/Outfit-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: Outfit;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Outfit'),
+    local('Outfit-SemiBold'),
+    local('Outfit-SemiBold'),
+    url('../fonts/Outfit-SemiBold.woff2') format('woff2'),
+    url('../fonts/Outfit-SemiBold.woff') format('woff');
+}

@@ -1,0 +1,122 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  /* fonts */
+  --font-family: 'DM Sans', sans-serif;
+  --second-family: 'Outfit', sans-serif;
+  --third-family: 'Candal', sans-serif;
+
+  /* colors */
+  --gray-defauilt: #79819a;
+  --gray-dark: #47516b;
+  --gray-lightest: #e2e6ee;
+}
+
+/* semantic color variables for this project */
+:root {
+  /* --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: var(--font-family);
+  font-size: 12px;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.01em;
+  text-align: start;
+  color: #2e2e48;
+  margin-bottom: 32px;
+}
+
+.development-section {
+  position: relative;
+  padding-left: 64px;
+  padding-bottom: 48px;
+}
+
+.development-section::before {
+  content: '';
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.36708 8.87513C2.04653 8.87513 0.165344 6.99395 0.165344 4.67339C0.165344 2.35283 2.04653 0.471649 4.36708 0.471649C6.68764 0.471649 8.56882 2.35283 8.56882 4.67339C8.56882 6.99395 6.68764 8.87513 4.36708 8.87513Z' fill='%235531A7' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center;
+  width: 32.37px;
+  height: 32.37px;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 2px 2px 0 rgba(0, 0, 0, 0.04),
+    0 12px 48px 0 rgba(0, 0, 0, 0.04),
+    0 2px 8px 0 rgba(0, 0, 0, 0.05);
+}
+
+.development-section::after {
+  content: '';
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 15.4px;
+  width: 2px;
+  height: 100%;
+  background-color: #e2e6ee;
+}
+
+@media screen and (max-width: 576px) {
+  .development-section {
+    padding-left: 44px;
+  }
+}
