@@ -16,14 +16,14 @@ export default {
   <div class="wrapper">
     <div class="user-info">
       <div class="user-info__img">
-        <img class="user-info__img-elem" src="@/assets/img/user.jpg" alt="Автор" />
+        <img class="user-info__img-elem" src="/assets/img/user.jpg" alt="Автор" />
       </div>
       <h1 class="user-info__name">Булат Талипов</h1>
       <p class="user-info__desc">Я Frontend-разработчик</p>
       <ul class="user-info__contacts">
         <li class="user-info__contact">
           <div class="user-info__contact-icon">
-            <img class="user-info__contact-icon-elem" src="@/assets/img/mail.svg" alt="Почта" />
+            <img class="user-info__contact-icon-elem" src="/assets/img/mail.svg" alt="Почта" />
           </div>
           <div class="user-info__contact-box">
             <div class="user-info__contact-box-title">Email</div>
@@ -34,7 +34,7 @@ export default {
         </li>
         <!-- <li class="user-info__contact">
             <div class="user-info__contact-icon">
-              <img class="user-info__contact-icon-elem" src="@/assets/img/link.svg" alt="Ссылка" />
+              <img class="user-info__contact-icon-elem" src="/assets/img/link.svg" alt="Ссылка" />
             </div>
             <div class="user-info__contact-box">
               <div class="user-info__contact-box-title">Website</div>
@@ -47,7 +47,7 @@ export default {
           </li> -->
         <li class="user-info__contact">
           <div class="user-info__contact-icon">
-            <img class="user-info__contact-icon-elem" src="@/assets/img/phone.svg" alt="Телефон" />
+            <img class="user-info__contact-icon-elem" src="/assets/img/phone.svg" alt="Телефон" />
           </div>
           <div class="user-info__contact-box">
             <div class="user-info__contact-box-title">Телефон</div>
@@ -58,7 +58,7 @@ export default {
           <div class="user-info__contact-icon">
             <img
               class="user-info__contact-icon-elem"
-              src="@/assets/img/location.svg"
+              src="/assets/img/location.svg"
               alt="Локация"
             />
           </div>
@@ -75,7 +75,7 @@ export default {
             <div class="user-info__socials-item-icon">
               <img
                 class="user-info__socials-item-icon-elem"
-                src="@/assets/img/instagram.svg"
+                src="/assets/img/instagram.svg"
                 alt="Инстаграм"
               />
             </div>
@@ -92,7 +92,7 @@ export default {
             <div class="user-info__socials-item-icon">
               <img
                 class="user-info__socials-item-icon-elem"
-                src="@/assets/img/github.svg"
+                src="/assets/img/github.svg"
                 alt="github"
               />
             </div>
@@ -107,7 +107,7 @@ export default {
               <div class="user-info__socials-item-icon">
                 <img
                   class="user-info__socials-item-icon-elem"
-                  src="@/assets/img/twitter.svg"
+                  src="/assets/img/twitter.svg"
                   alt="Twitter"
                 />
               </div>
@@ -122,7 +122,7 @@ export default {
             <div class="user-info__socials-item-icon">
               <img
                 class="user-info__socials-item-icon-elem"
-                src="@/assets/img/linkedin.svg"
+                src="/assets/img/linkedin.svg"
                 alt="Linkedin"
               />
             </div>
@@ -145,7 +145,7 @@ export default {
             <div class="user-info__languages-item-icon">
               <img
                 class="user-info__languages-item-icon-elem"
-                src="@/assets/img/flag-russia.png"
+                src="/assets/img/flag-russia.png"
                 alt="Флаг"
               />
             </div>
@@ -158,7 +158,7 @@ export default {
             <div class="user-info__languages-item-icon">
               <img
                 class="user-info__languages-item-icon-elem"
-                src="@/assets/img/flag-english.svg"
+                src="/assets/img/flag-english.svg"
                 alt="Флаг"
               />
             </div>
@@ -175,7 +175,7 @@ export default {
           <li class="user-info__hobbies-item">
             <img
               class="user-info__hobbies-item-icon"
-              src="@/assets/img/dumbbell-solid.svg"
+              src="/assets/img/dumbbell-solid.svg"
               alt="Иконка"
             />
             <div class="user-info__hobbies-item-text">Фитнес</div>
@@ -183,7 +183,7 @@ export default {
           <li class="user-info__hobbies-item">
             <img
               class="user-info__hobbies-item-icon"
-              src="@/assets/img/person-snowboarding-solid.svg"
+              src="/assets/img/person-snowboarding-solid.svg"
               alt="Иконка"
             />
             <div class="user-info__hobbies-item-text">Сноубординг</div>
@@ -191,7 +191,7 @@ export default {
           <li class="user-info__hobbies-item">
             <img
               class="user-info__hobbies-item-icon"
-              src="@/assets/img/book-solid.svg"
+              src="/assets/img/book-solid.svg"
               alt="Иконка"
             />
             <div class="user-info__hobbies-item-text">Чтение</div>

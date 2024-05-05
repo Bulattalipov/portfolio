@@ -1,39 +1,45 @@
 <script>
 export default {
   name: 'PortSkills',
+  props: {
+    title: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       skills1: [
         {
           id: 1,
-          imgUrl: 'src/assets/img/skills/figma.png',
+          imgUrl: 'figma.png',
           title: 'Figma'
         },
         {
           id: 2,
-          imgUrl: 'src/assets/img/skills/javascript.png',
+          imgUrl: 'javascript.png',
           title: 'JavaScript'
         },
         {
           id: 3,
-          imgUrl: 'src/assets/img/skills/html.png',
+          imgUrl: 'html.png',
           title: 'HTML'
         }
       ],
       skills2: [
         {
           id: 1,
-          imgUrl: 'src/assets/img/skills/css.png',
+          imgUrl: 'css.png',
           title: 'CSS'
         },
         {
           id: 2,
-          imgUrl: 'src/assets/img/skills/vue.png',
+          imgUrl: 'vue.png',
           title: 'VUE 3'
         },
         {
           id: 3,
-          imgUrl: 'src/assets/img/skills/vscode.png',
+          imgUrl: 'vscode.png',
           title: 'VSCode'
         }
       ]
@@ -44,11 +50,15 @@ export default {
 
 <template>
   <div class="skills development-section">
-    <div class="skills__title title">Инструменты/Навыки</div>
+    <div class="title">{{ this.title }}</div>
     <ul class="skills__items">
       <li v-for="skill1 in this.skills1" :key="skill1.id" class="skills__item">
         <div class="skills__item-img">
-          <img class="skills__item-img-elem" :src="skill1.imgUrl" alt="Figma" />
+          <img
+            class="skills__item-img-elem"
+            :src="'assets/img/skills/' + skill1.imgUrl"
+            :alt="skill1.title"
+          />
         </div>
         <div class="skills__item-img-title">{{ skill1.title }}</div>
         <div v-if="skill1.desc" class="skills__item-img-desc">{{ skill1.desc }}</div>
@@ -57,7 +67,11 @@ export default {
     <ul class="skills__items skills__items--five">
       <li v-for="skill2 in this.skills2" :key="skill2.id" class="skills__item">
         <div class="skills__item-img">
-          <img class="skills__item-img-elem" :src="skill2.imgUrl" alt="Figma" />
+          <img
+            class="skills__item-img-elem"
+            :src="'assets/img/skills/' + skill2.imgUrl"
+            :alt="skill2.title"
+          />
         </div>
         <div class="skills__item-img-title">{{ skill2.title }}</div>
         <div v-if="skill2.desc" class="skills__item-img-desc">{{ skill2.desc }}</div>

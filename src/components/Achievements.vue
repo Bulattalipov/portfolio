@@ -1,60 +1,62 @@
 <script>
 export default {
   name: 'PortAchievements',
-  data() {}
+  props: {
+    title: {
+      type: String,
+      required: true
+    }
+  },
+  data() {
+    return {
+      achievements: [
+        {
+          id: 1,
+          name: 'Alexa Dev Community',
+          profession: 'Graphic Designer',
+          location: 'Chandigarh',
+          img: '2.png',
+          date: 'Oct 2021 - Nov 2021',
+          desc: 'Creatively Designing and Developing web UI for Chandigarh University’s Alexa Developer Community, upcoming big launch of full website.'
+        },
+        {
+          id: 2,
+          name: 'Winter of Code',
+          profession: 'Hacktoberfest Contributor',
+          location: 'Online',
+          img: '3.png',
+          date: 'Jan 2021 - March 2021',
+          desc: 'Overwhelming to be a part of DSC NSEC project - DSC NSEC Algorithms for Winter of Code 2020. First introduction to Git and Github. How github is used by most of the programmers in order to manage the projects.'
+        }
+      ]
+    }
+  }
 }
 </script>
 
 <template>
   <div class="achievements development-section">
-    <div class="title">Achievements</div>
+    <div class="title">{{ this.title }}</div>
     <ul class="achievements__items">
-      <li class="achievements__item">
+      <li v-for="item in this.achievements" :key="item.id" class="achievements__item">
         <div class="achievements__item-box">
           <div class="achievements__item-box-top">
-            <div class="achievements__item-box-top-date">Oct 2021 - Nov 2021</div>
-            <div class="achievements__item-box-top-location">Chandigarh</div>
+            <div class="achievements__item-box-top-date">{{ item.date }}</div>
+            <div class="achievements__item-box-top-location">{{ item.location }}</div>
           </div>
           <div class="achievements__item-box-holder">
             <img
               class="achievements__item-box-img"
-              src="@/assets/img/achievements/1.svg"
-              alt="Лого"
+              :src="'assets/img/achievements/' + item.img"
+              :alt="item.title"
             />
             <div class="achievements__item-box-info">
-              <div class="achievements__item-box-info-profession">Graphic Designer</div>
-              <div class="achievements__item-box-info-name">Alexa Dev Community</div>
+              <div class="achievements__item-box-info-profession">{{ item.profession }}</div>
+              <div class="achievements__item-box-info-name">{{ item.name }}</div>
             </div>
           </div>
         </div>
-        <p class="achievements__item-text">
-          Creatively Designing and Developing web UI for Chandigarh University’s Alexa Developer
-          Community, upcoming big launch of full website.
-        </p>
-      </li>
-      <li class="achievements__item">
-        <div class="achievements__item-box">
-          <div class="achievements__item-box-top">
-            <div class="achievements__item-box-top-date">Jan 2021 - March 2021</div>
-            <div class="achievements__item-box-top-location">Online</div>
-          </div>
-          <div class="achievements__item-box-holder">
-            <img
-              class="achievements__item-box-img"
-              src="@/assets/img/achievements/3.png"
-              alt="Лого"
-            />
-            <div class="achievements__item-box-info">
-              <div class="achievements__item-box-info-profession">Hacktoberfest Contributor</div>
-              <div class="achievements__item-box-info-name">Winter of Code</div>
-            </div>
-          </div>
-        </div>
-        <p class="achievements__item-text">
-          Overwhelming to be a part of DSC NSEC project - DSC NSEC Algorithms for Winter of Code
-          2020. First introduction to Git and Github. How github is used by most of the programmers
-          in order to manage the projects.
-        </p>
+        <p class="achievements__item-text">{{ item.desc }}</p>
       </li>
     </ul>
   </div>

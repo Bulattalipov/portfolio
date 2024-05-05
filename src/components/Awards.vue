@@ -1,12 +1,18 @@
 <script>
 export default {
   name: 'PortAwards',
+  props: {
+    title: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       awards: [
         {
           id: 1,
-          imgUrl: 'src/assets/img/awards/zerotoone.jpg',
+          imgUrl: 'zerotoone.jpg',
           title: 'От 0 до 1',
           name: 'Курс по верстке',
           date: 'Дек 2021 - Фев 2022'
@@ -19,12 +25,16 @@ export default {
 
 <template>
   <div class="awards development-section">
-    <div class="awards__title title">Сертификаты и награды</div>
+    <div class="title">{{ this.title }}</div>
     <ul class="awards__items">
       <li v-for="item in this.awards" :key="item.id" class="awards__item">
         <div class="awards__item-box">
           <div class="awards__item-img">
-            <img class="awards__item-img-elem" :src="item.imgUrl" alt="Logo" />
+            <img
+              class="awards__item-img-elem"
+              :src="'assets/img/awards/' + item.imgUrl"
+              alt="Logo"
+            />
           </div>
           <div class="awards__item-info">
             <div class="awards__item-info-title">{{ item.title }}</div>

@@ -1,12 +1,18 @@
 <script>
 export default {
   name: 'PortLatest',
+  props: {
+    title: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       latest: [
         {
           id: 1,
-          imgUrl: 'src/assets/img/latest/figma.jpg',
+          imgUrl: 'figma.jpg',
           title: 'Alexa Dev Community Landing Page',
           desc: 'Web UI design for alexa developers comunity',
           link: 'https//figma.com'
@@ -19,12 +25,16 @@ export default {
 
 <template>
   <div class="latest development-section">
-    <div class="latest__title title">Последние проекты</div>
+    <div class="title">{{ this.title }}</div>
     <ul class="latest__items">
       <li v-for="item in this.latest" :key="item.id" class="latest__item">
         <div class="latest__item-inner">
           <div class="latest__item-img">
-            <img class="latest__item-img-elem" :src="item.imgUrl" alt="Figma" />
+            <img
+              class="latest__item-img-elem"
+              :src="'assets/img/latest/' + item.imgUrl"
+              alt="Figma"
+            />
           </div>
           <div class="latest__item-box">
             <div class="latest__item-title">{{ item.title }}</div>

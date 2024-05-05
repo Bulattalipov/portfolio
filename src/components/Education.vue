@@ -1,12 +1,18 @@
 <script>
 export default {
   name: 'PortEducation',
+  props: {
+    title: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       items: [
         {
           id: 1,
-          imgUrl: 'src/assets/img/education/KFU.png',
+          imgUrl: 'KFU.png',
           text: 'Набережночелнинский институт КФУ',
           name: "Наравление 'Сервис'",
           date: '2015 - 2019'
@@ -19,11 +25,15 @@ export default {
 
 <template>
   <div class="education development-section">
-    <h2 class="title">Education</h2>
+    <h2 class="title">{{ this.title }}</h2>
     <div class="education__items">
       <div v-for="item in this.items" :key="item.id" class="education__item">
         <div class="education__item-box">
-          <img class="education__item-box-img" :src="item.imgUrl" :alt="item.text" />
+          <img
+            class="education__item-box-img"
+            :src="'assets/img/education/' + item.imgUrl"
+            :alt="item.text"
+          />
           <div class="education__item-box-text">{{ item.text }}</div>
         </div>
         <div class="education__item-name">{{ item.name }}</div>
