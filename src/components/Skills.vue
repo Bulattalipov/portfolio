@@ -95,7 +95,7 @@ export default {
       grid-template-columns: repeat(5, 1fr);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -107,7 +107,7 @@ export default {
     background: #f7f9fc;
     padding: 20px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       flex-direction: row;
       justify-content: center;
       gap: 20px;

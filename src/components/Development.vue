@@ -35,7 +35,7 @@ export default {
   flex: 1;
   padding: 64px 48px 0 32px;
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 575px) {
     padding: 32px 24px 0 16px;
   }
 }

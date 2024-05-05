@@ -50,11 +50,11 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 575px) {
       grid-template-columns: repeat(1, 1fr);
     }
   }

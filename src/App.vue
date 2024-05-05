@@ -207,7 +207,7 @@ export default {
 .wrapper {
   display: flex;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1023px) {
     flex-direction: column;
   }
 }
@@ -218,11 +218,11 @@ export default {
   background-color: #f7f9fc;
   padding: 48.4px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1023px) {
     width: 100%;
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 575px) {
     padding: 24px;
   }
 
@@ -273,12 +273,12 @@ export default {
     border-bottom: 1px solid #e2e6ee;
     margin-bottom: 32px;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
       flex-direction: row;
       gap: 40px;
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       flex-wrap: wrap;
     }
   }
@@ -337,12 +337,12 @@ export default {
     flex-direction: column;
     gap: 20px;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
       flex-direction: row;
       gap: 40px;
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       flex-wrap: wrap;
     }
   }
@@ -409,12 +409,12 @@ export default {
     flex-direction: column;
     gap: 20px;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
       flex-direction: row;
       gap: 40px;
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       flex-wrap: wrap;
     }
   }
@@ -468,12 +468,12 @@ export default {
     flex-direction: column;
     gap: 20px;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
       flex-direction: row;
       gap: 40px;
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       flex-wrap: wrap;
     }
   }

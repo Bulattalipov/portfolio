@@ -53,7 +53,7 @@ export default {
     margin-left: 24px;
     margin-right: 24px;
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       margin: 0;
     }
   }
@@ -66,7 +66,7 @@ export default {
     padding: 15px 23px;
     background-color: #f7f9fc;
 
-    @media screen and (max-width: 412px) {
+    @media screen and (max-width: 411px) {
       flex-direction: column;
     }
   }
@@ -115,7 +115,7 @@ export default {
     letter-spacing: 0.01em;
     color: #47516b;
 
-    @media screen and (max-width: 412px) {
+    @media screen and (max-width: 411px) {
       text-align: end;
     }
   }

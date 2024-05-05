@@ -115,7 +115,7 @@ body {
   background-color: #e2e6ee;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .development-section {
     padding-left: 44px;
   }
