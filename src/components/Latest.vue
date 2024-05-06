@@ -1,6 +1,5 @@
 <script>
 export default {
-  name: 'PortLatest',
   props: {
     title: {
       type: String,

@@ -6,7 +6,6 @@ import Latest from './Latest.vue'
 import Awards from './Awards.vue'
 
 export default {
-  name: 'PortDevelopment',
   components: {
     Achievements,
     Education,

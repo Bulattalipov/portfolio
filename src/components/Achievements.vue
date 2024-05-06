@@ -1,6 +1,5 @@
 <script>
 export default {
-  name: 'PortAchievements',
   props: {
     title: {
       type: String,
