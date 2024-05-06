@@ -27,7 +27,7 @@ export default {
   <div class="latest development-section">
     <div class="title">{{ this.title }}</div>
     <ul class="latest__items">
-      <li v-for="item in this.latest" :key="item.id" class="latest__item">
+      <li v-for="item in latest" :key="item.id" class="latest__item">
         <div class="latest__item-inner">
           <div class="latest__item-img">
             <img

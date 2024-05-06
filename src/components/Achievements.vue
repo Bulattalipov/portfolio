@@ -38,7 +38,7 @@ export default {
   <div class="achievements development-section">
     <div class="title">{{ this.title }}</div>
     <ul class="achievements__items">
-      <li v-for="item in this.achievements" :key="item.id" class="achievements__item">
+      <li v-for="item in achievements" :key="item.id" class="achievements__item">
         <div class="achievements__item-box">
           <div class="achievements__item-box-top">
             <div class="achievements__item-box-top-date">{{ item.date }}</div>

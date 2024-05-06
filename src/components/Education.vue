@@ -27,7 +27,7 @@ export default {
   <div class="education development-section">
     <h2 class="title">{{ this.title }}</h2>
     <div class="education__items">
-      <div v-for="item in this.items" :key="item.id" class="education__item">
+      <div v-for="item in items" :key="item.id" class="education__item">
         <div class="education__item-box">
           <img
             class="education__item-box-img"

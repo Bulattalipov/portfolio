@@ -27,7 +27,7 @@ export default {
   <div class="awards development-section">
     <div class="title">{{ this.title }}</div>
     <ul class="awards__items">
-      <li v-for="item in this.awards" :key="item.id" class="awards__item">
+      <li v-for="item in awards" :key="item.id" class="awards__item">
         <div class="awards__item-box">
           <div class="awards__item-img">
             <img

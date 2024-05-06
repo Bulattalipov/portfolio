@@ -52,7 +52,7 @@ export default {
   <div class="skills development-section">
     <div class="title">{{ this.title }}</div>
     <ul class="skills__items">
-      <li v-for="skill1 in this.skills1" :key="skill1.id" class="skills__item">
+      <li v-for="skill1 in skills1" :key="skill1.id" class="skills__item">
         <div class="skills__item-img">
           <img
             class="skills__item-img-elem"
@@ -65,7 +65,7 @@ export default {
       </li>
     </ul>
     <ul class="skills__items skills__items--five">
-      <li v-for="skill2 in this.skills2" :key="skill2.id" class="skills__item">
+      <li v-for="skill2 in skills2" :key="skill2.id" class="skills__item">
         <div class="skills__item-img">
           <img
             class="skills__item-img-elem"
