@@ -4,9 +4,7 @@ export default {}
 
 <template>
   <div class="user-info">
-    <div class="user-info__img">
-      <img class="user-info__img-elem" src="/assets/img/user.jpg" alt="Автор" />
-    </div>
+    <img class="user-info__img" src="/assets/img/user.jpg" alt="Автор" />
     <h1 class="user-info__name">Булат Талипов</h1>
     <p class="user-info__desc">Я Frontend-разработчик</p>
     <ul class="user-info__contacts">
@@ -201,18 +199,11 @@ export default {}
     position: relative;
     width: 96px;
     height: 96px;
+    display: flex;
     flex-shrink: 0;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 16px;
-  }
-
-  &__img-elem {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
   }
 

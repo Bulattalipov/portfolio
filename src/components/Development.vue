@@ -21,8 +21,8 @@ export default {
 
 <template>
   <div class="development">
-    <Education title="Education"></Education>
-    <Achievements title="Achievements"></Achievements>
+    <Education title="Образование"></Education>
+    <Achievements title="Достижения"></Achievements>
     <Skills title="Инструменты/Навыки"></Skills>
     <Latest title="Последние проекты"></Latest>
     <Awards title="Сертификаты и награды"></Awards>
@@ -31,6 +31,7 @@ export default {
 
 <style scoped lang="scss">
 .development {
+  max-width: 1100px;
   flex: 1;
   padding: 64px 48px 0 32px;
 
