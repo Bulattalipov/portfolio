@@ -15,11 +15,30 @@ export default {
       latest: [
         {
           id: 1,
-          imgUrl: 'figma.jpg',
-          title: 'Alexa Dev Community Landing Page',
-          desc: 'Web UI design for alexa developers comunity',
-          icon: 'figma-mini.svg',
-          link: 'https//figma.com'
+          imgUrl: 'itmo.jpg',
+          title: 'Университет ITMO',
+          desc: 'Вёрстка под Bitrix',
+          stack: 'HTML5, CSS3, SCSS, Javascript, jQuery, Git, Gulp, Handlebars',
+          link: 'https://securityhub.ru/',
+          linkGit: 'https://github.com/Bulattalipov/itmo'
+        },
+        {
+          id: 2,
+          imgUrl: 'tquality.jpg',
+          title: 'Точка Качества',
+          desc: 'Вёрстка под Bitrix',
+          stack: 'HTML5, CSS3, SCSS, Javascript, jQuery, GitLab, Gulp, Pug, GSAP',
+          link: 'https://tquality.ru/',
+          linkGit: 'https://github.com/Bulattalipov/tochka-frontend'
+        },
+        {
+          id: 3,
+          imgUrl: 'tatsocbank.jpg',
+          title: 'Татсоцбанк',
+          desc: 'Вёрстка под Bitrix',
+          stack: 'HTML5, CSS3, SCSS, Javascript, jQuery, GitLab, Gulp, Pug',
+          link: 'https://bulattalipov.github.io/tatsocbank-frontend/',
+          linkGit: 'https://github.com/Bulattalipov/tatsocbank-frontend'
         }
       ]
     }

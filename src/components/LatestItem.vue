@@ -17,7 +17,11 @@ export default {
       type: String,
       required: true
     },
-    icon: {
+    stack: {
+      type: String,
+      required: true
+    },
+    linkGit: {
       type: String,
       required: true
     }
@@ -34,13 +38,20 @@ export default {
       <div class="latest__item-box">
         <div class="latest__item-title">{{ title }}</div>
         <p class="latest__item-desc">{{ desc }}</p>
+        <p class="latest__item-stack">Технологии: {{ stack }}</p>
       </div>
     </div>
-    <a class="latest__item-link" :href="link">
+    <a class="latest__item-link" :href="link" target="_blank">
       <div class="latest__item-link-icon-wrapper">
-        <img class="latest__item-link-icon" :src="'assets/img/latest/' + icon" :alt="icon" />
+        <img class="latest__item-link-icon" src="/assets/img/latest/link-mini.svg" :alt="icon" />
       </div>
       <div class="latest__item-link-text">{{ link }}</div>
+    </a>
+    <a class="latest__item-link" :href="link" target="_blank">
+      <div class="latest__item-link-icon-wrapper">
+        <img class="latest__item-link-icon" src="/assets/img/latest/github.svg" :alt="icon" />
+      </div>
+      <div class="latest__item-link-text">{{ linkGit }}</div>
     </a>
   </div>
 </template>
@@ -51,6 +62,7 @@ export default {
     padding: 24px;
     border-radius: 8px;
     background: #f7f9fc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
   }
 
   &__item-box {
@@ -59,13 +71,14 @@ export default {
 
   &__item-inner {
     display: flex;
+    flex-direction: column;
     gap: 16px;
   }
 
   &__item-img {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 210px;
     border-radius: 3px;
     overflow: hidden;
     flex-shrink: 0;
@@ -99,7 +112,7 @@ export default {
   &__item-link-text {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 125%;
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -108,7 +121,7 @@ export default {
   }
 
   &__item-title {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 125%;
     color: #2e2e48;
@@ -120,7 +133,15 @@ export default {
     font-weight: 400;
     line-height: 129%;
     letter-spacing: 0.01em;
-    color: #79819a;
+  }
+
+  &__item-stack {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 129%;
+    letter-spacing: 0.01em;
+    margin-top: 5px;
+    font-style: italic;
   }
 }
 </style>

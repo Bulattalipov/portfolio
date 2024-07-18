@@ -22,7 +22,7 @@ export default {
 <template>
   <div class="development">
     <Education title="Образование"></Education>
-    <Achievements title="Достижения"></Achievements>
+    <!-- <Achievements title="Достижения"></Achievements> -->
     <Skills title="Инструменты/Навыки"></Skills>
     <Latest title="Последние проекты"></Latest>
     <Awards title="Сертификаты и награды"></Awards>

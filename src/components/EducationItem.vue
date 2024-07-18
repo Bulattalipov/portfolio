@@ -37,14 +37,7 @@ export default {
   &__item {
     background-color: #f7f9fc;
     padding: 16px 24px 16px 24px;
-
-    &:nth-child(3n + 1) {
-      border-radius: 8px 0 0 8px;
-    }
-
-    &:nth-child(3n + 3) {
-      border-radius: 0 8px 8px 0;
-    }
+    border-radius: 8px;
   }
 
   &__item-box {

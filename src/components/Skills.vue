@@ -44,6 +44,21 @@ export default {
           id: 3,
           imgUrl: 'vscode.svg',
           title: 'VSCode'
+        },
+        {
+          id: 4,
+          imgUrl: 'github.png',
+          title: 'GitHub'
+        },
+        {
+          id: 5,
+          imgUrl: 'gulp.svg',
+          title: 'Gulp'
+        },
+        {
+          id: 6,
+          imgUrl: 'scss.png',
+          title: 'SCSS'
         }
       ]
     }

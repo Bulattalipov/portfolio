@@ -6,7 +6,7 @@ export default {}
   <div class="user-info">
     <img class="user-info__img" src="/assets/img/user.jpg" alt="Автор" />
     <h1 class="user-info__name">Булат Талипов</h1>
-    <p class="user-info__desc">Я Frontend-разработчик</p>
+    <p class="user-info__desc">Frontend разработчик</p>
     <ul class="user-info__contacts">
       <li class="user-info__contact">
         <div class="user-info__contact-icon">
@@ -134,7 +134,7 @@ export default {}
           </div>
           <div class="user-info__languages-item-box">
             <div class="user-info__languages-item-box-title">Русский</div>
-            <div class="user-info__languages-item-box-text">Очень хорошо</div>
+            <div class="user-info__languages-item-box-text">В совершенстве</div>
           </div>
         </li>
         <li class="user-info__languages-item">
