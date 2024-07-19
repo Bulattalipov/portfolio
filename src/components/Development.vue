@@ -25,7 +25,7 @@ export default {
     <!-- <Achievements title="Достижения"></Achievements> -->
     <Skills title="Инструменты/Навыки"></Skills>
     <Latest title="Последние проекты"></Latest>
-    <Awards title="Сертификаты и награды"></Awards>
+    <Awards title="Пройденные курсы"></Awards>
   </div>
 </template>
 

@@ -19,6 +19,20 @@ export default {
           title: 'От 0 до 1',
           name: 'Курс по верстке',
           date: 'Дек 2021 - Фев 2022'
+        },
+        {
+          id: 2,
+          imgUrl: 'js-course.jpg',
+          title: 'Иван Петриченко',
+          name: 'Курс по JS',
+          date: 'Март 2022 - Октябрь 2022'
+        },
+        {
+          id: 3,
+          imgUrl: 'vue-course.webp',
+          title: 'Прокачай свои навыки во Vue 3',
+          name: 'Курс по Vue 3',
+          date: 'Май 2024 - '
         }
       ]
     }
