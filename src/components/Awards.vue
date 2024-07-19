@@ -30,7 +30,7 @@ export default {
         {
           id: 3,
           imgUrl: 'vue-course.webp',
-          title: 'Прокачай свои навыки во Vue 3',
+          title: 'Курс по VueJS 3 (Pinia, Composition API)',
           name: 'Курс по Vue 3',
           date: 'Май 2024 - '
         }
