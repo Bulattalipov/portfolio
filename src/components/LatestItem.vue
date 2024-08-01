@@ -47,7 +47,7 @@ export default {
       </div>
       <div class="latest__item-link-text">{{ link }}</div>
     </a>
-    <a class="latest__item-link" :href="link" target="_blank">
+    <a class="latest__item-link" :href="linkGit" target="_blank">
       <div class="latest__item-link-icon-wrapper">
         <img class="latest__item-link-icon" src="/assets/img/latest/github.svg" :alt="icon" />
       </div>
