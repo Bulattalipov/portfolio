@@ -122,10 +122,10 @@ export default {
 
   &__item-title {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 125%;
     color: #2e2e48;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
   }
 
   &__item-desc {
