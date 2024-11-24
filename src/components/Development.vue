@@ -138,7 +138,7 @@ export default {
     <!-- <Achievements title="Достижения"></Achievements> -->
     <Skills title="Инструменты/Навыки"></Skills>
     <Latest title="Последние проекты" :list="latest"></Latest>
-    <Latest title="Курсовые проекты по Vue" :list="vueProjects"></Latest>
+    <Latest title="Проекты на Vue" :list="vueProjects"></Latest>
     <Awards title="Пройденные курсы"></Awards>
   </div>
 </template>
