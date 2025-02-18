@@ -17,6 +17,15 @@ export default {
     return {
       latest: [
         {
+          id: 9,
+          imgUrl: 'tisbi-nauka.jpg',
+          title: 'ТИСБИ Наука',
+          desc: 'Вёрстка под Symphony, работа c REST API, подключение графиков',
+          stack: 'HTML5, CSS3, SCSS, Javascript, Git, Gulp, Handlebars',
+          link: 'https://bulattalipov.github.io/tisbi-nauka/',
+          linkGit: 'https://github.com/Bulattalipov/tisbi-nauka'
+        },
+        {
           id: 1,
           imgUrl: 'itmo.jpg',
           title: 'Университет ITMO',
@@ -90,6 +99,15 @@ export default {
         }
       ],
       vueProjects: [
+        {
+          id: 5,
+          imgUrl: 'euphoria.jpg',
+          title: 'Euphoria - интернет-магазин одежды',
+          desc: 'САЙТ В ПРОЦЕССЕ РАЗРАБОТКИ',
+          stack: 'HTML5, CSS3, SCSS, Javascript, Vue 3, Git, Vite, Pinia',
+          link: 'https://resonant-chaja-790b95.netlify.app/',
+          linkGit: 'https://github.com/Bulattalipov/Euphoria'
+        },
         {
           id: 1,
           imgUrl: 'brix.jpg',
