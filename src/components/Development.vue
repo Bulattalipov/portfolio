@@ -1,5 +1,6 @@
 <script>
-import Achievements from './Achievements.vue'
+import AboutMe from './AboutMe.vue'
+// import Achievements from './Achievements.vue'
 import Education from './Education.vue'
 import Skills from './Skills.vue'
 import Latest from './Latest.vue'
@@ -7,7 +8,8 @@ import Awards from './Awards.vue'
 
 export default {
   components: {
-    Achievements,
+    AboutMe,
+    // Achievements,
     Education,
     Skills,
     Latest,
@@ -152,6 +154,7 @@ export default {
 
 <template>
   <div class="development">
+    <AboutMe title="Обо мне"></AboutMe>
     <Education title="Образование"></Education>
     <!-- <Achievements title="Достижения"></Achievements> -->
     <Skills title="Инструменты/Навыки"></Skills>
